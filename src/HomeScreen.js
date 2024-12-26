@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+
+import { styles } from './styles/stylesHome';
+import { style } from "./styles/styles";
 
 export default function HomeScreen({ navigation }) {
   const [alcool, setAlcool] = useState('');
@@ -10,46 +13,34 @@ export default function HomeScreen({ navigation }) {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Qual compensa mais?</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Preço do Álcool"
-        keyboardType="numeric"
-        value={alcool}
-        onChangeText={setAlcool}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Preço da Gasolina"
-        keyboardType="numeric"
-        value={gasolina}
-        onChangeText={setGasolina}
-      />
-      <Button title="Calcular" onPress={handleCalculate} />
+    <View style={style.container}>
+      <View style={styles.header}>
+        <Image source={require("./img/logo.png")}
+               style={styles.logo}
+        />
+        <Text style={styles.title}>Qual compensa mais?</Text>
+      </View>
+
+      <View style={styles.main}>
+        <Text style={styles.title2}>Alcool (preço por litro)</Text>
+        <TextInput
+          style={styles.input}
+          keyboardType="numeric"
+          value={alcool}
+          onChangeText={setAlcool}
+        />
+        <Text style={styles.title2}>Gasolina (preço por litro)</Text>
+        <TextInput
+          style={styles.input}
+          keyboardType="numeric"
+          value={gasolina}
+          onChangeText={setGasolina}
+        />
+        <TouchableOpacity style={styles.btn} onPress={handleCalculate}>
+          <Text style={styles.title3}>Calcular</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-  },
-  input: {
-    height: 40,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
-    width: '100%',
-    marginBottom: 15,
-    paddingHorizontal: 10,
-  },
-});
