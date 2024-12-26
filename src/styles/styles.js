@@ -5,5 +5,21 @@ export const style = StyleSheet.create({
         flex: 1,
         padding: 20,
         backgroundColor: "#363636"
-      }
+      },
+      title2:{
+        color: "#fff",
+        fontSize: 18,
+        margin: 14
+      },
+      header:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems:"center"
+      },
+      logo:{
+        marginBottom: 20
+      },
+      main:{
+        flex:1,
+      },
 })

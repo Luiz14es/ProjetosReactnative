@@ -1,27 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    header:{
-      flex: 1,
-      justifyContent: "center",
-      alignItems:"center"
-    },
-    logo:{
-      marginBottom: 20
-    },
-    main:{
-      flex:1
-    },
     title: {
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: 20,
       color:"#fff"
-    },
-    title2:{
-      color: "#fff",
-      fontSize: 18,
-      margin: 14
     },
     input: {
       height: 40,

@@ -14,22 +14,22 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={style.container}>
-      <View style={styles.header}>
+      <View style={style.header}>
         <Image source={require("./img/logo.png")}
-               style={styles.logo}
+               style={style.logo}
         />
         <Text style={styles.title}>Qual compensa mais?</Text>
       </View>
 
-      <View style={styles.main}>
-        <Text style={styles.title2}>Alcool (preço por litro)</Text>
+      <View style={style.main}>
+        <Text style={style.title2}>Alcool (preço por litro)</Text>
         <TextInput
           style={styles.input}
           keyboardType="numeric"
           value={alcool}
           onChangeText={setAlcool}
         />
-        <Text style={styles.title2}>Gasolina (preço por litro)</Text>
+        <Text style={style.title2}>Gasolina (preço por litro)</Text>
         <TextInput
           style={styles.input}
           keyboardType="numeric"
