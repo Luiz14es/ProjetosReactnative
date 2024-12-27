@@ -9,7 +9,7 @@ export const style = StyleSheet.create({
       title2:{
         color: "#fff",
         fontSize: 18,
-        margin: 14
+        margin: 15
       },
       header:{
         flex: 1,

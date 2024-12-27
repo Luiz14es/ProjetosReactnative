@@ -22,7 +22,7 @@ export default function HomeScreen({ navigation }) {
       </View>
 
       <View style={style.main}>
-        <Text style={style.title2}>Alcool (preço por litro)</Text>
+        <Text style={style.title2}>Alcool (preço por litro) </Text>
         <TextInput
           style={styles.input}
           keyboardType="numeric"

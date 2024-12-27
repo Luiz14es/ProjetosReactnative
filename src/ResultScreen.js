@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#fff",
-    fontSize: 25,
+    fontSize: 24,
     fontWeight: "bold",
   },
   btn2: {

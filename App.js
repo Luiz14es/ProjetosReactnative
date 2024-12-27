@@ -13,7 +13,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen}  options={{ headerStyle: { backgroundColor: '#363636' },
             headerTintColor: '#fff'}} />
         <Stack.Screen name="Result" component={ResultScreen} options={{ headerStyle: { backgroundColor: '#363636' },
-            headerTintColor: '#fff'}} />
+            headerTintColor: '#fff' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
